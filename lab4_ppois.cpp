@@ -20,38 +20,7 @@ int main()
     graph.AddEdge(5, 8);
     cout << graph.getVertexDegree(8);
 
-    /*for ( auto it =graph.end_reverse(); ;  --it)
-    {
-           
-            if (it == graph.begin()) {
-                cout << *it << "\n";
-                break;
-            }
-            else
-                cout << *it << "\n";
-
-         }
-    
-    for (auto it = graph.begin(); it != graph.end(); ++it)
-    {
-        cout << *it << "\n";
-    }*/
-
-    /* for (auto it = graph.begin_inc_edges(1); it != graph.end_inc_edges(1); ++it)
-     {
-         auto edge = *it;
-         cout << "<"<<edge.first<<", " << edge.second << ">" << "\n";
-     }*/
- 
-     
-
-   // cout << graph.getAmount_of_Verteces();
-//     for (auto it = graph.begin_adj(1); it != graph.end_adj(1); ++it)
-//        {
-//           
-//            cout << *it;
-//        }
-//}}}}
+   
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
