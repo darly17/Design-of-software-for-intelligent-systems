@@ -11,7 +11,7 @@ FILE_NAME = r"C:\Users\user\Desktop\dasha\Учеба\PPOIS2\save.pkl"
 
 
 
-class Menu:
+class System:
 
     def __init__(self):
         isCycle = True
@@ -101,7 +101,7 @@ class Menu:
                 isCycle = False
                 print("Exiting program...")
 
-def save(ui: Menu):
+def save(ui: System):
     with open(FILE_NAME, "wb") as file:
         pickle.dump(ui, file)
 
@@ -110,7 +110,7 @@ def load():
         with open(FILE_NAME, "rb") as file:
             return pickle.load(file)
     except FileNotFoundError:
-        return Menu()
+        return System()
 
 
 
